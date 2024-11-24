@@ -26,11 +26,11 @@ const Page = () => {
         setList(newList)
     }
     return (
-        <div className="container px-20 mx-auto h-screen bg-background flex flex-col items-center">
-            <h1 className="font-bold text-4xl text-gray-200 m-4" >Lista de Tarefas</h1>
+        <div className="container md:px-20 px-8 mx-auto h-screen bg-background flex flex-col items-center">
+            <h1 className="font-bold md:text-4xl text-gray-200 m-4 text-2xl" >Lista de Tarefas</h1>
             <div>
                 <input type="text" placeholder="Digite a sua tarefa"
-                    className="w-96 h-30 p-1 outline-none"
+                    className="md:w-96 h-30 p-1 outline-none w-44"
                     value={itemInput}
                     onChange={e => setItemImput(e.target.value)} />
 
