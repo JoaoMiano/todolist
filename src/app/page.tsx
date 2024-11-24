@@ -37,7 +37,7 @@ const Page = () => {
                 <button className="bg-violet-950 p-2 m-4 text-gray-200 font-semibold rounded-md transition-all hover:bg-violet-800" onClick={handleAddItem}>Adicionar</button>
             </div>
 
-            <ul className="w-full">
+            <ul className="w-full ">
                 {list.map((item, index) => (
                     <li className="text-gray-200 text-2xl bg-zinc-700 p-2 flex justify-between items-center rounded-md mb-2" key={index}>
                         <input type="checkbox" onClick={()=> {handleToggleItem(index)}} checked={item.checked} className="w-6 h-6 accent-violet-800 rounded-full" />
@@ -46,6 +46,9 @@ const Page = () => {
                     </li>
                 ))}
             </ul>
+            <footer className="w-screen text-xl font-semibold text-gray-200 flex justify-center mt-16">
+                <p>Desenvolvido por <a href="https://github.com/JoaoMiano" target="_blank" className="text-violet-800"> João Pedro Miano</a></p>
+            </footer>
         </div>
     )
 }
